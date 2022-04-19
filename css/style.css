@@ -311,11 +311,11 @@ main {
   margin-right: 8px;
 }
 .next-page::after{
-  content: url('../img/next.svg');
+  content: url('../img/arrow.svg');
   margin-left: 8px;
 }
 .last-page::after{
-  content: url('../img/arrow.svg');
+  content: url('../img/next.svg');
   margin-left: 8px;
 }
 .pages a{
