@@ -98,7 +98,7 @@ main {
 .banner {
   /* background-image: url('../img/banner.jpg'); */
   background-image: linear-gradient(#2e33389b, rgba(57, 63, 71, 0.7)),
-    url("../img/banner.jpg");
+    url("../img/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -124,9 +124,9 @@ main {
   margin-top: 80px;
 }
 
-.main-content {
+/* .main-content {
   margin-bottom: 77px;
-}
+} */
 
 .main-content:last-child {
   padding-bottom: 156px;
@@ -205,12 +205,12 @@ main {
   width: calc(25% - 34px);
 
   line-height: 1.4;
-  background-color: #f9f9f9;
+  background-color: #FFFFFF;
   border-radius: 8px;
   padding: 11px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   text-align: center;
   color: #393f47;
 
@@ -221,7 +221,7 @@ main {
   border-radius: 8px;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   display: inline-block;
 }
 .item-picture {
@@ -281,6 +281,56 @@ main {
   margin-bottom: 15px;
   margin-top: 31px;
 }
+
+.page-number{
+  max-width: 480px;
+  width:70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0px;
+}
+.page-number .active-page{
+  border: 1px solid #E2B62D;
+  border-radius: 6px;
+  color: #E2B62D;
+}
+.page-number a{
+  color: #F9F9F9;
+  font-size: 13px;
+  white-space: nowrap;
+  
+}
+.first-page::before{
+  content: url('../img/prew.svg');
+  margin-right: 8px;
+}
+.prew-page::before{
+  content: url('../img/ar.svg');
+  margin-right: 8px;
+}
+.next-page::after{
+  content: url('../img/next.svg');
+  margin-left: 8px;
+}
+.last-page::after{
+  content: url('../img/arrow.svg');
+  margin-left: 8px;
+}
+.pages a{
+  padding:5px 8px;
+  margin-right: 6px;
+}
+.pages a:last-child{
+
+  margin-right:0px
+}
+.pages {
+ display: flex;
+
+}
+
 
 /* -----------------------footer-------------------- */
 
@@ -439,7 +489,7 @@ h5.footer-header::before {
 /* ----------------Contact Page*------------------------*/
 
 .contactpageheader {
-  background-image: url("../img/nightsky_forcontact.jpg");
+  background-image: url("../img/banner-forcontact.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
